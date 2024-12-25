@@ -3,7 +3,7 @@ from pipeline_requests import data_record
 
 if data_record:
     try:
-        connstr = 'user/password@host:1522/xepdb1'
+        connstr = 'user/password@host:port/xepdb1'
         connection = oracledb.connect(connstr)
         cur = connection.cursor()
 
